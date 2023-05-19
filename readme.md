@@ -1,22 +1,23 @@
 # Directus2Ts
 
+Create typescript types from any directus api.
 Forked from: https://github.com/elierotenberg/directus-typescript-gen
 
-## Instalação
-
-```js
-  npm i @devix/directus2ts
-```
-
-## Uso
+## Installation
 
 ```bash
-npx @devix/directus2ts --host <directus-host> --token <auth-token> --typeName <nome-type> --outFile <nome-arquivo.d.ts> --simplified
+  yarn add -D @devix-tecnologia/directus2ts
 ```
 
-<small>A opção simplified gera um arquivo menor sem muita poluição. Serve para maioria dos usos.</small>
+## Usage
 
-## Instanciando no Directus SDK
+```bash
+yarn directus2ts --host <directus-host> --token <auth-token> --typeName <group-name> --prefix <prefix-collection> --outFile <output-file.d.ts> --simplified
+```
+
+<small>The simplified option generates a smaller file without too much pollution. It is suitable for most uses.</small>
+
+## Instancing the Directus SDK
 
 ```ts
 import { Directus } from "@directus/sdk";
